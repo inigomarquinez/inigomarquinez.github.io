@@ -19,8 +19,6 @@ jobs:
         uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
       - name: Install, build, and upload your site
         uses: withastro/action@877fd7e5cf5dc5d213f6701c790972aa25452ad3 # v2.0.1
-      - name: Configure CNAME
-        run: echo "inigomarquinezprado.dev" > ./public/CNAME
 
   deploy:
     needs: build
